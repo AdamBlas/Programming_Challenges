@@ -1,0 +1,19 @@
+﻿<Window x:Class="_12_Internet_Time.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_12_Internet_Time"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="377.093" Width="347.521"
+        Closing="OnClosing">
+    <Grid>
+        <TextBlock FontSize="20" Text="Current time" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock FontSize="20" Text="Time in UTC+1" HorizontalAlignment="Left" Margin="10,127,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <TextBlock FontSize="20" Text="Internet time" HorizontalAlignment="Left" Margin="10,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Name="CurrentClock" FontSize="30" Text="00:00:00" HorizontalAlignment="Left" Height="48" Margin="10,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="308"/>
+        <TextBox Name="UTCClock" FontSize="30" Text="00:00:00" HorizontalAlignment="Left" Height="48" Margin="10,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="308"/>
+        <TextBox Name="InternetClock" FontSize="30" Text="@000.000" HorizontalAlignment="Left" Height="48" Margin="10,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="308"/>
+
+    </Grid>
+</Window>

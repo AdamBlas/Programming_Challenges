@@ -1,0 +1,17 @@
+﻿<Window x:Class="_13_Haiku_Generator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_13_Haiku_Generator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="280.667" Width="440">
+    <Grid>
+        <TextBlock Name="Text1" FontSize="20" FontFamily="Impact" FontStyle="Italic" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Random" VerticalAlignment="Top" Height="40" Width="400"/>
+        <TextBlock Name="Text2" FontSize="20" FontFamily="Impact" FontStyle="Italic" HorizontalAlignment="Left" Margin="40,55,0,0" TextWrapping="Wrap" Text="Haiku" VerticalAlignment="Top" Height="40" Width="400"/>
+        <TextBlock Name="Text3" FontSize="20" FontFamily="Impact" FontStyle="Italic" HorizontalAlignment="Left" Margin="70,100,0,0" TextWrapping="Wrap" Text="Generator" VerticalAlignment="Top" Height="40" Width="400"/>
+        <Button Name="NewHaikuButton" Content="New Haiku" HorizontalAlignment="Left" Margin="10,206,0,0" VerticalAlignment="Top" Width="75" Height="35" RenderTransformOrigin="0.516,0.752" Click="HewHaiku_Click"/>
+        <Button Name="SaveButton" Content="Save to file" HorizontalAlignment="Left" Margin="90,206,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="Save_Click"/>
+
+    </Grid>
+</Window>

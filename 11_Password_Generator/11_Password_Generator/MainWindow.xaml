@@ -1,0 +1,21 @@
+﻿<Window x:Class="_11_Password_Generator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_11_Password_Generator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox FontSize="50" IsReadOnly="True" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Random password generator" VerticalAlignment="Top" Margin="10,10,0,0" Height="82" Width="765"/>
+        <TextBox Name="passwordBox" IsReadOnly="True" FontSize="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Height="103" Margin="10,307,10,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="772"/>
+        <RadioButton Name="randomWords" GroupName="RadioButtonGroup" FontSize="25" IsChecked="True" Content="Random words" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Height="36" Width="246"/>
+        <RadioButton Name="randomChars" GroupName="RadioButtonGroup" FontSize="25" Content="Random characters" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Height="36" Width="246"/>
+        <Button FontSize="25" Content="Generate password" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="244" Margin="10,247,538,0" Height="55" Click="Button_Click"/>
+        <ProgressBar Name="Strengh" Minimum="0" Maximum="30" HorizontalAlignment="Left" Height="16" Margin="463,286,0,0" VerticalAlignment="Top" Width="312"/>
+        <TextBlock FontSize="25" HorizontalAlignment="Left" Margin="463,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="312"><Run Text="Password strengh"/><Run Text=":"/></TextBlock>
+        <TextBlock Name="StrengText" FontSize="25" HorizontalAlignment="Left" Margin="463,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="312"/>
+
+
+    </Grid>
+</Window>
